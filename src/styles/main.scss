@@ -1,0 +1,9 @@
+@import 'base/vars';
+@import 'base/mixins/mixins';
+@import 'fonts';
+@import 'base/reset';
+
+body {
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 400;
+}
