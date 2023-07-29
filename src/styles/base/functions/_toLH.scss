@@ -1,0 +1,4 @@
+@function toLH($font-size, $size) {
+  $lh: calc($size / $font-size);
+  @return $lh;
+}
