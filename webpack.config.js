@@ -27,7 +27,7 @@ const config = {
       directory: path.join(__dirname, 'dist'),
     },
     watchFiles: {
-      paths: ['public', 'src/**/*.*'],
+      paths: ['src/**/*.*'],
       options: {
         usePolling: true,
       },
