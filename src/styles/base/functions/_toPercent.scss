@@ -1,0 +1,4 @@
+@function toPc($maxSize, $needSize) {
+  $pc: calc($needSize / $maxSize) * 100%;
+  @return $pc;
+}
