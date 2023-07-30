@@ -1,0 +1,22 @@
+{
+  "about": {
+    "link": "/about",
+    "text": "О продукте"
+  },
+  "howItWorks": {
+    "link": "/howitworks",
+    "text": "Как работает"
+  },
+  "technology": {
+    "link": "/technology",
+    "text": "Технологии"
+  },
+  "questions": {
+    "link": "/questions",
+    "text": "Вопросы"
+  },
+  "contacts": {
+    "link": "/contacts",
+    "text": "Контакты"
+  }
+}

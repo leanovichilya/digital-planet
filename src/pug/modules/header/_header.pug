@@ -1,5 +1,7 @@
 include ../../components/logo/_logo
+- const {logo} = require('../../../data/logo.json');
 
 header
-    +logo('header__logo', 'Digital planet')
-    block nav
+    +logo('header', logo.text)
+    nav.navigation.header__navigation
+        include ../../components/menu/_menu
