@@ -1,10 +1,10 @@
-{
-  "facebook": {
+[
+  {
     "link": "facebook.com",
     "text": "Facebook"
   },
-  "vk": {
+  {
     "link": "vk.com",
     "text": "VKontakte"
   }
-}
+]
