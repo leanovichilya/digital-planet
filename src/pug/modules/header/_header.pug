@@ -1,12 +1,13 @@
 include ../../components/logo/_logo
-- const {logo} = require('../../../data/logo.json');
+- const { logo } = require('../../../data/logo.json');
 // - const contacts = [...require('../../../data/contacts.json')];
 // - const socials = [...require('../../../data/socials.json')];
 
 header.header
+  .container
     nav.navigation.header__navigation
-        +logo('header', logo.text)
-        include ../../components/menu/_menu
-        include ../../components/order/_order
-        //+menu('contacts', 'header', contacts)
-        //+menu('socials', 'header', socials)
+      +logo('header', logo.text)
+      include ../../components/menu/_menu
+      include ../../components/order/_order
+      //+menu('contacts', 'header', contacts)
+      //+menu('socials', 'header', socials)

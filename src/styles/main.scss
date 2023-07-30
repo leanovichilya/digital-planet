@@ -1,10 +1,10 @@
 @import 'base/vars';
-@import "base/functions";
+@import 'base/functions';
 @import 'base/mixins';
 @import 'fonts';
 @import 'base/reset';
-@import "components";
-@import "modules";
+@import 'components';
+@import 'modules';
 
 body {
   min-width: toRem($min_width);

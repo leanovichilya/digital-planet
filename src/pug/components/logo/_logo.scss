@@ -22,7 +22,7 @@
     transition: fill 0.3s;
   }
 
-  &:hover svg path, {
+  &:hover svg path {
     fill: var(--brand-brighter);
   }
 }
