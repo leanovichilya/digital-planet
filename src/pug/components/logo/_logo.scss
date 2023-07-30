@@ -11,6 +11,10 @@
     font-size: toRem(18);
     text-transform: uppercase;
     letter-spacing: toRem(0.72);
+
+    @media screen and (max-width: toRem(1100)) {
+      display: none;
+    }
   }
 
   &:hover {

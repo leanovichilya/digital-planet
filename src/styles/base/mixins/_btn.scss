@@ -24,6 +24,6 @@
     content: '';
     width: toRem($width);
     height: toRem($height);
-    background-image: url('../../../assets/icons/' + #{$url});
+    background-image: url('../../../assets/icons/#{$url}');
   }
 }

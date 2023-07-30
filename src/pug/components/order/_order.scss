@@ -1,11 +1,18 @@
 .order {
+  display: flex;
+  width: toRem(108);
+  margin-right: toRem(20);
+
+  @media screen and (max-width: toRem(960)) {
+    margin-right: toRem(10);
+  }
+
   &__item {
-    max-width: toRem(108);
     width: 100%;
   }
 
   &__link {
-    @include btn(9, 9, 14, 0.42, toRem(2));
+    @include btn(8, 8, 14, 0.42, toRem(2));
     @include btnBorder(2, var(--brand-brighter));
   }
 }

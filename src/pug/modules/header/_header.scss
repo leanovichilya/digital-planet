@@ -1,13 +1,14 @@
 .header {
   text-transform: uppercase;
+  overflow-wrap: normal;
+
+  &__container {
+    padding-top: toRem(40);
+  }
 
   &__navigation {
     position: relative;
     display: flex;
     align-items: center;
-  }
-
-  &__list {
-    display: flex;
   }
 }

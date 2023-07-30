@@ -28,6 +28,7 @@ a {
 .container {
   padding-left: toRem(10);
   padding-right: toRem(10);
-  max-width: toRem($max_width - 20);
+  max-width: toRem($max_width + 20);
+  width: 100%;
   margin: 0 auto;
 }
