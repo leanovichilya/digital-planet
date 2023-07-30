@@ -16,7 +16,7 @@
   &__item:not(:last-child):after {
     content: '';
     display: block;
-    margin-left: toPc(16, 1280);
+    margin-left: toRem(16);
     margin-right: toRem(16);
     min-width: toRem(4);
     width: toRem(4);
