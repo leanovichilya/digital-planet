@@ -1,6 +1,11 @@
 .header {
   text-transform: uppercase;
 
+  &__navigation {
+    position: relative;
+    display: flex;
+  }
+
   &__list {
     display: flex;
   }

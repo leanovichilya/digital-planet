@@ -1,0 +1,48 @@
+.burger {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: toRem(24);
+  height: toRem(14);
+  top: toRem(10);
+  right: toRem(10);
+  overflow-x: hidden;
+  background-color: transparent;
+
+  &__dash {
+    width: 100%;
+    height: toRem(2);
+    background-color: #e0e0e0;
+    transition: transform 0.3s;
+  }
+
+  &__close {
+    .burger__dash:last-child {
+      transform: translateX(toRem(8));
+    }
+
+    &:hover .burger__dash:last-child {
+      transform: translateX(0);
+    }
+  }
+
+  &__open {
+    width: toRem(19);
+    height: toRem(19);
+
+    .burger__dash {
+      &:first-child {
+        transform: rotate(45deg) translate(5px, 7px);
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:last-child {
+        transform: rotate(-45deg) translate(5px, -7px);
+      }
+    }
+  }
+}

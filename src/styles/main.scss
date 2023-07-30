@@ -10,7 +10,7 @@ body {
   min-width: toRem($min_width);
   font-family: $main_font;
   font-weight: 500;
-  background-color: lightgray;
+  background-color: rgba(0, 14, 96, 0.53);
   color: var(--text-color);
 }
 
@@ -25,5 +25,8 @@ a {
 }
 
 .container {
-  max-width: toRem($max_width);
+  padding-left: toRem(10);
+  padding-right: toRem(10);
+  max-width: toRem($max_width - 20);
+  margin: 0 auto;
 }
