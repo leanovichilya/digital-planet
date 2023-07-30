@@ -1,5 +1,4 @@
-mixin menu(className, boxName, list)
-    ul(class=`${className} ${boxName}__list`)
-      each item in list
-          li(class=`${className}__item`)
-              a(class=`${className}__link` href= item.link)= item.text
+include ../list/_list
+- const menu = [...require('../../../data/menu.json')];
+
++list('menu', 'header', menu, '')

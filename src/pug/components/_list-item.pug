@@ -1,0 +1,3 @@
+mixin listItem(className, link, text, btn)
+    li(class=`${className}__item`)
+        a(class=`${btn ? btn + ' ': ''}${className}__link` href= link)= text

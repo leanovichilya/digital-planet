@@ -1,0 +1,29 @@
+@mixin btn($pt, $pb, $fontSize, $letterSpacing, $bdRadius) {
+  padding-top: toRem($pt);
+  padding-bottom: toRem($pb);
+  font-size: toRem($fontSize);
+  letter-spacing: toRem($letterSpacing);
+  border-radius: $bdRadius;
+  text-align: center;
+}
+
+@mixin btnBorder($bd, $color) {
+  border: toRem($bd) solid $color;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: var(--brand-brighter);
+  }
+}
+
+@mixin btnIcon($gap, $width: 31, $height: 31, $url) {
+  display: flex;
+  column-gap: $gap;
+
+  &:before {
+    content: '';
+    width: toRem($width);
+    height: toRem($height);
+    background-image: url('../../../assets/icons/' + #{$url});
+  }
+}

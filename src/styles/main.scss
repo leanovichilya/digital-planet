@@ -7,6 +7,7 @@
 @import "modules";
 
 body {
+  min-width: toRem($min_width);
   font-family: $main_font;
   font-weight: 500;
   background-color: lightgray;
@@ -16,4 +17,13 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.btn {
+  display: block;
+  font-weight: 700;
+}
+
+.container {
+  max-width: toRem($max_width);
 }

@@ -1,3 +1,4 @@
-ul
-    li
-        a Заказать
+include ../list/_list
+- const order = [...require('../../../data/order.json')];
+
++list('order', 'header', order, 'btn')

@@ -1,22 +1,22 @@
 [
   {
-    "link": "/about",
+    "link": "/about.html",
     "text": "О продукте"
   },
   {
-    "link": "/howitworks",
+    "link": "/howitworks.html",
     "text": "Как работает"
   },
   {
-    "link": "/technology",
+    "link": "/technology.html",
     "text": "Технологии"
   },
   {
-    "link": "/questions",
+    "link": "/questions.html",
     "text": "Вопросы"
   },
   {
-    "link": "/contacts",
+    "link": "/contacts.html",
     "text": "Контакты"
   }
 ]

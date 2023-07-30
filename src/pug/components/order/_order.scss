@@ -1,0 +1,12 @@
+.order {
+
+  &__item{
+    max-width: toRem(108);
+    width: 100%;
+  }
+
+  &__link {
+    @include btn(9, 9, 14, 0.42, toRem(2));
+    @include btnBorder(2, var(--brand-brighter));
+  }
+}
