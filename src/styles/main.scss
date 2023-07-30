@@ -4,9 +4,16 @@
 @import 'fonts';
 @import 'base/reset';
 @import "components";
+@import "modules";
 
 body {
-  font-family: 'Roboto', 'sans-serif';
-  font-weight: 400;
+  font-family: $main_font;
+  font-weight: 500;
   background-color: lightgray;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

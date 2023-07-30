@@ -1,0 +1,27 @@
+.menu {
+  max-width: toRem(619);
+  font-size: toRem(15);
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    transition: color 0.3s;
+
+    &:hover{
+      color: var(--brand-brighter);
+    }
+  }
+
+  &__item:not(:last-child):after {
+    content: '';
+    display: block;
+    margin-left: toPc(16, 1280);
+    margin-right: toRem(16);
+    min-width: toRem(4);
+    width: toRem(4);
+    height: toRem(4);
+    border-radius: 50%;
+    background-color: #b0acac;
+  }
+}

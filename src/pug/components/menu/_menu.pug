@@ -1,0 +1,5 @@
+mixin menu(className, boxName, list)
+    ul(class=`${className} ${boxName}__list`)
+      each item in list
+          li(class=`${className}__item`)
+              a(class=`${className}__link` href= item.link)= item.text

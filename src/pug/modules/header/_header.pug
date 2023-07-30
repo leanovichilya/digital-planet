@@ -1,7 +1,15 @@
 include ../../components/logo/_logo
+include ../../components/menu/_menu
 - const {logo} = require('../../../data/logo.json');
+- const menu = [...require('../../../data/menu.json')];
+- const order = [...require('../../../data/order.json')];
+- const contacts = [...require('../../../data/contacts.json')];
+- const socials = [...require('../../../data/socials.json')];
 
-header
-    +logo('header', logo.text)
+header.header
     nav.navigation.header__navigation
-        include ../../components/menu/_menu
+        +logo('header', logo.text)
+        +menu('menu', 'header', menu)
+        +menu('order', 'header', order)
+        +menu('contacts', 'header', contacts)
+        +menu('socials', 'header', socials)
