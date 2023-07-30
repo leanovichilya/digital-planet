@@ -1,0 +1,17 @@
+.socials {
+  column-gap: toRem(12);
+
+  &__link {
+    display: block;
+    width: toRem(32);
+    height: toRem(32);
+  }
+
+  &__link-facebook {
+    @include pathIcon('facebook');
+  }
+
+  &__link-vk {
+    @include pathIcon('vk');
+  }
+}

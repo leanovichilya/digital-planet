@@ -1,10 +1,12 @@
 [
   {
     "link": "facebook.com",
-    "text": "Facebook"
+    "text": "Facebook",
+    "icon": "facebook"
   },
   {
     "link": "vk.com",
-    "text": "VKontakte"
+    "text": "VKontakte",
+    "icon": "vk"
   }
 ]

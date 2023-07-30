@@ -1,3 +1,7 @@
-mixin listItem(className, link, text, btn)
+mixin listItem(className, link, text, btn, icon)
   li(class=`${className}__item`)
-    a(class=`${btn ? btn + ' ': ''}${className}__link`, href=link)= text
+    if icon
+      a(class=`${btn ? btn + ' ' : ''}${className}__link ${className}__link-${icon}`, href=link)
+        span(class=`${className}__text visually-hidden`)= text
+    else
+      a(class=`${btn ? btn + ' ' : ''}${className}__link`, href=link)= text

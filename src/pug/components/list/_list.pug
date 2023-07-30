@@ -3,4 +3,7 @@ include ../_list-item
 mixin list(className, boxName, list, btn)
   ul(class=`${className} ${boxName}__list`)
     each item in list
-      +listItem(className, item.link, item.text, btn)
+      if item.icon
+        +listItem(className, item.link, item.text, btn, item.icon)
+      else
+        +listItem(className, item.link, item.text, btn)
