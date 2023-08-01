@@ -3,11 +3,12 @@
   --text-color: #ffffff;
   --brand: #15b28d;
   --brand-brighter: #0dd1a2;
+  --gradient-mobile-menu: linear-gradient(225deg, #171a1c 0%, rgba(94, 94, 87, 0.72) 100%);
 }
 
 // Fonts
 $main_font: 'Ubuntu', sans-serif;
 
 // Sizes
-$max_width: 1238;
+$max_width: 1258;
 $min_width: 320;

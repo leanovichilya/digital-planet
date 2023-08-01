@@ -7,6 +7,10 @@
     margin-right: toRem(10);
   }
 
+  @media screen and (max-width: toRem(869)) {
+    align-self: center;
+  }
+
   &__item {
     width: 100%;
   }

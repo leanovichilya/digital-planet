@@ -1,14 +1,43 @@
 .header {
   text-transform: uppercase;
   overflow-wrap: normal;
+  white-space: nowrap;
+  background-image: url('src/assets/images/header-bg.jpg');
 
   &__container {
     padding-top: toRem(40);
+
+    @media screen and (max-width: toRem(869)) {
+      padding-top: toRem(24);
+    }
   }
 
   &__navigation {
-    position: relative;
     display: flex;
     align-items: center;
+
+    & ul {
+      padding-left: toRem(10);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    max-width: toRem(965);
+    width: 100%;
+
+    @media screen and (max-width: toRem(869)) {
+      position: absolute;
+      padding-top: toRem(20);
+      flex-direction: column;
+      align-items: flex-start;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--gradient-mobile-menu);
+    }
   }
 }

@@ -1,6 +1,14 @@
 .socials {
   display: none;
   column-gap: toRem(12);
+  bottom: 10px;
+  left: toRem(73);
+
+  @media screen and (max-width: toRem(869)) {
+    display: flex;
+    margin-top: toRem(20);
+    order: 4;
+  }
 
   &__link {
     display: block;

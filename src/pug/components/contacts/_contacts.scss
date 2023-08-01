@@ -2,4 +2,12 @@
   display: flex;
   font-size: toRem(16);
   font-weight: 700;
+  order: 2;
+
+  @media screen and (max-width: toRem(869)) {
+    width: 100%;
+    margin-top: toRem(50);
+    padding-top: toRem(30);
+    border-top: toRem(2) solid rgba(#fff, 0.24);
+  }
 }
