@@ -16,6 +16,7 @@
   }
 
   &__link {
+    display: block;
     @include btn(8, 8, 14, 0.42, toRem(2));
     @include btnBorder(2, var(--brand-brighter));
   }

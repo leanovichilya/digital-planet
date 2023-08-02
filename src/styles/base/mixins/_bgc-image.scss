@@ -1,0 +1,6 @@
+@mixin bgc-image($url) {
+  background-image: url('../../../assets/images/#{$url}');
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: cover;
+}

@@ -1,0 +1,94 @@
+.digital-planet {
+  height: 100vh;
+  @include bgc-image('header-bg.jpg');
+
+  &__container {
+    padding-top: toRem(153 + 74);
+  }
+
+  &__title {
+    font-size: toRem(96);
+    font-weight: 400;
+
+    @media screen and (max-width: toRem(1100)) {
+      font-size: toRem(76);
+    }
+
+    @media screen and (max-width: toRem(960)) {
+      font-size: toRem(56);
+    }
+
+    @media screen and (max-width: toRem(760)) {
+      font-size: toRem(36);
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin-top: toRem(24);
+    font-size: toRem(17);
+    font-weight: 300;
+    line-height: 1.5;
+
+    @media screen and (max-width: toRem(760)) {
+      font-size: toRem(15);
+      text-align: center;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: toRem(24);
+    margin-top: toRem(71);
+
+    @media screen and (max-width: toRem(760)) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: toRem(12);
+    }
+  }
+
+  &__link {
+    @include btn(19, 18, 21, 0.63, toRem(3));
+
+    &-order {
+      max-width: toRem(238);
+      width: 100%;
+      @include btnIcon(toRem(11), 31, 31, 'order.svg');
+      background-color: var(--brand);
+    }
+
+    &-video {
+      max-width: toRem(201);
+      width: 100%;
+      @include btnBorder(3, var(--brand));
+      @include btnIcon(toRem(11), 31, 31, 'play.svg');
+    }
+
+    @media screen and (max-width: toRem(860)) {
+      max-width: toRem(207);
+    }
+  }
+
+  &__image-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @media screen and (max-width: toRem(1100)) {
+      max-width: toRem(390);
+    }
+
+    @media screen and (max-width: toRem(960)) {
+      max-width: toRem(320);
+    }
+
+    @media screen and (max-width: toRem(860)) {
+      max-width: toRem(300);
+    }
+
+    @media screen and (max-width: toRem(760)) {
+      display: none;
+    }
+  }
+}

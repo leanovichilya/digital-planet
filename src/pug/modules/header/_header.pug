@@ -1,13 +1,12 @@
 include ../../components/logo/_logo
 - const { logo } = require('../../../data/logo.json');
 
-header.header
-  .container.header__container
-    nav.navigation.header__navigation
-      +logo('header', logo.text)
-      .header__menu
-        include ../../components/menu/_menu
-        include ../../components/order/_order
-        include ../../components/contacts/_contacts
-        include ../../components/burger/_burger
-        include ../../components/socials/_socials
+header.header.container.header__container
+  nav.navigation.header__navigation
+    +logo('header', logo.text)
+    .header__menu
+      include ../../components/menu/_menu
+      include ../../components/order/_order
+      include ../../components/contacts/_contacts
+      include ../../components/burger/_burger
+      include ../../components/socials/_socials

@@ -13,17 +13,27 @@
 
   &:hover {
     background-color: var(--brand-brighter);
+    border-color: var(--brand-brighter);
   }
 }
 
 @mixin btnIcon($gap, $width: 31, $height: 31, $url) {
   display: flex;
+  align-items: center;
+  justify-content: center;
   column-gap: $gap;
+  transition: background-color 0.3s;
 
   &:before {
     content: '';
     width: toRem($width);
     height: toRem($height);
     background-image: url('../../../assets/icons/#{$url}');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover {
+    background-color: var(--brand-brighter);
   }
 }
