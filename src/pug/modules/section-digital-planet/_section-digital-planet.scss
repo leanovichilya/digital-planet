@@ -2,25 +2,36 @@
   height: 100vh;
   @include bgc-image('header-bg.jpg');
 
+  @media screen and (max-width: toRem(459)) {
+    background-image: url('../../../assets/images/header-bg-mobile.jpg');
+  }
+
   &__container {
-    padding-top: toRem(153 + 74);
+    padding-top: toRem(74);
   }
 
   &__title {
+    margin-top: toRem(153);
     font-size: toRem(96);
     font-weight: 400;
 
-    @media screen and (max-width: toRem(1100)) {
+    @media screen and (max-width: toRem(1099)) {
       font-size: toRem(76);
     }
 
-    @media screen and (max-width: toRem(960)) {
+    @media screen and (max-width: toRem(959)) {
+      margin-top: toRem(135);
       font-size: toRem(56);
     }
 
-    @media screen and (max-width: toRem(760)) {
+    @media screen and (max-width: toRem(759)) {
+      margin-top: toRem(115);
       font-size: toRem(36);
       text-align: center;
+    }
+
+    @media screen and (max-width: toRem(459)) {
+      margin-top: toRem(90);
     }
   }
 
@@ -30,21 +41,29 @@
     font-weight: 300;
     line-height: 1.5;
 
-    @media screen and (max-width: toRem(760)) {
+    @media screen and (max-width: toRem(759)) {
       font-size: toRem(15);
       text-align: center;
+    }
+
+    @media screen and (max-width: toRem(459)) {
+      margin-top: toRem(20);
     }
   }
 
   &__buttons {
+    margin-top: toRem(71);
     display: flex;
     column-gap: toRem(24);
-    margin-top: toRem(71);
 
-    @media screen and (max-width: toRem(760)) {
+    @media screen and (max-width: toRem(759)) {
       flex-direction: column;
       align-items: center;
       row-gap: toRem(12);
+    }
+
+    @media screen and (max-width: toRem(459)) {
+      margin-top: toRem(50);
     }
   }
 
@@ -65,8 +84,13 @@
       @include btnIcon(toRem(11), 31, 31, 'play.svg');
     }
 
-    @media screen and (max-width: toRem(860)) {
+    @media screen and (max-width: toRem(859)) {
       max-width: toRem(207);
+    }
+
+    @media screen and (max-width: toRem(459)) {
+      padding-top: toRem(15);
+      padding-bottom: toRem(15);
     }
   }
 
@@ -75,19 +99,19 @@
     right: 0;
     bottom: 0;
 
-    @media screen and (max-width: toRem(1100)) {
+    @media screen and (max-width: toRem(1099)) {
       max-width: toRem(390);
     }
 
-    @media screen and (max-width: toRem(960)) {
+    @media screen and (max-width: toRem(959)) {
       max-width: toRem(320);
     }
 
-    @media screen and (max-width: toRem(860)) {
+    @media screen and (max-width: toRem(859)) {
       max-width: toRem(300);
     }
 
-    @media screen and (max-width: toRem(760)) {
+    @media screen and (max-width: toRem(759)) {
       display: none;
     }
   }
